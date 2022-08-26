@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install fish
+echo /usr/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/bin/fish
+{{ else if eq .chezmoi.os "darwin" -}}
+{{ end -}}
