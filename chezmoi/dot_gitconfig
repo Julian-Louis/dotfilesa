@@ -1,2 +1,7 @@
 [user]
-    email = "contact@julianlouis.fr"
+    name = Julian Louis
+    email = contact@julianlouis.fr
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
